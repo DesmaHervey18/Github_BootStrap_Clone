@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap_project.css" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -26,7 +27,7 @@
                         height="40" alt="">
                 </a>
 
-                <form class="form-inline ">
+                <form class="form-inline">
                     <input class="form-control" type="search" Placeholder="Search or jump to..." aria-label="Search">
                     <button class="btn btn-outline-success " type="submit">/</button>
                 </form>
@@ -88,73 +89,88 @@
                     </div>
                 </li>
             </ul>
-
-            <!-- </nav> -->
         </nav>
     </div>
-    <div>
+    <div class="container">
         <div>
             <div class="d-flex justify-content-between">
                 <div>
                     <a href="">twbs</a> /
                     <a href="">bootstrap</a>
                 </div>
-                <ul class="major-buttons" style="background: none">
-                    <button type="button" class="btn btn-outline-black" style="background-color: white">
-                        <img style="width: 15px; height: 15px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEVxp8cMqucR8S5NC8icyZrq3iN_98j2-VSXLza8IQrQCHK5z1Yw">Watch
-                    </button> width
-                    <button type="button" class="btn btn-outline-black" style="background-color: white">
-                        <img src="">Star</button>
-                    <button type="button" class="btn btn-outline-black" style="background-color: white">
-                        <img src="">Fork</button>
-                    <a class="social-count js-social-count" href="/DesmaHervey18/article_card.html/watchers" aria-label="0 users are watching this repository">
-                        0
-                    </a>
-                </ul>
+                <div>
+                    <div class="btn-group border border-dark rounded" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-muted">
+                            <img style="width: 15px; height: 15px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEVxp8cMqucR8S5NC8icyZrq3iN_98j2-VSXLza8IQrQCHK5z1Yw">Watch
+                        </button>
+                        <button class="btn btn-light">
+                            <a class="social-count js-social-count" href="/DesmaHervey18/article_card.html/watchers" style="color: black" aria-label="7,397 users are watching this repository">
+                                7,397
+                            </a>
+                        </button>
+                    </div>
+                    <div class="btn-group border border-dark rounded" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-muted">
+                            <img style="width: 15px; height: 15px;" src="http://simpleicon.com/wp-content/uploads/star.png">Star
+                        </button>
+                        <button class="btn btn-light">
+                            <a class="social-count js-social-count" href="/DesmaHervey18/article_card.html/watchers" style="color: black" aria-label="127,250 users are watching this repository">
+                                127,250
+                            </a>
+                        </button>
+                    </div>
+                    <div class="btn-group border border-dark rounded" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-muted">
+                            <img style="width: 25px; height: 25px:" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfVBAVCIE8A6UwdM3_r_vBAt5HKhJzJ4CpejeBby8vSTiEmiRAnA">Fork </button>
+                        <button class="btn btn-light">
+                            <a class="social-count js-social-count" href="/DesmaHervey18/article_card.html/watchers" style="color: black" aria-label="61,991 users are watching this repository">
+                                61,991
+                            </a>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div>
-                <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path>
-                </svg>
-                <li></li>
-
-            </div>
+            <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true">
+                <path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path>
+            </svg>
+            </li>
         </div>
-        <ul class="nav nav-tabs">
-            <li class=" nav-item ">
-                <a class="nav-link active " style="color: gray;" href="# ">
+
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active " role="tab" data-toggle="tab" aria-selected="true" style="color: gray;" href="#">
                     <div style="display: flex;">
                         <img src="https://static.thenounproject.com/png/1171-200.png" width="15" height="15" alt="">
                         <p>Code</p>
                     </div>
                 </a>
             </li>
-            <li class="nav-item ">
-                <a class="nav-link " style="color: gray;" href="# ">
+            <li class="nav-item">
+                <a class="nav-link " role="tab" data-toggle="tab" aria-selected="false" style="color: gray;" href="#">
                     <div style="display: flex;">
                         <img src="https://png.pngtree.com/svg/20170317/asset_management_major_issues_warning_719276.png" width="15" height="15" alt="">
                         <p>Issues</p>
                     </div>
                 </a>
             </li>
-            <li class="nav-item ">
-                <a class="nav-link " style="color: gray;" href="# ">
+            <li class="nav-item">
+                <a class="nav-link " role="tab" data-toggle="tab" aria-selected="false" style="color: gray;" href="#">
                     <div style="display: flex;">
                         <img src="https://cdn0.iconfinder.com/data/icons/octicons/1024/git-pull-request-512.png" width="15" height="15" alt="">
                         <p>Pull requests</p>
                     </div>
                 </a>
             </li>
-            <li class="nav-item ">
-                <a class="nav-link disabled " style="color: gray" href="# ">
+            <li class="nav-item">
+                <a class="nav-link " role="tab" data-toggle="tab" aria-selected="false" style="color: gray" href="#">
                     <div style="display: flex;">
                         <img src="https://cdn1.vectorstock.com/i/1000x1000/85/70/presentation-icon-vector-12918570.jpg" width="15" height="15" alt="">
                         <p>Projects</p>
                     </div>
                 </a>
             </li>
-            <li class="nav-item ">
-                <a class="nav-link disabled " style="color: gray" href="# ">
+            <li class="nav-item">
+                <a class="nav-link " role="tab" data-toggle="tab" aria-selected="false" style="color: gray" href="#">
                     <div style="display: flex;">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZcXrNnQa3ov5Ld1x8VjdRK8DlplgISti_MDBnNxqFEHi9ZTOMiQ" width="15"
                             height="15" alt="">
@@ -164,7 +180,129 @@
             </li>
         </ul>
     </div>
-    </div>
+    <div class="card">
+        <div class="card-header d-flex justify-content-between">
+            <div class="d-flex">
+                <img src="" class="my-auto">
+                <p class="my-auto px-2">
+                    <b> 4 Open</b>
+                    <i class="fas fa-check"></i>9 Closed</p>
+            </div>
+            <div class="sort">
+                <a class="nav-link dropdown-toggle" style="color: black" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Sort
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" agohref="#">Something else here</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class='search-bar my-auto mb-3'>
+                <nav class="navbar navbar-light">
+                    <form class="form-inline">
+                        <img class="mag" src="http://www.emmabandrews.org/project/files/original/dc49ccca47590458afb61ac7db49868b.png" width="10"
+                            height="10">
+                        <input style="width: 30rem" class="form-control mr-sm-2" type="search" placeholder="  Is:open" aria-label="Search">
+                    </form>
+                </nav>
+            </div>
+            <div class="card">
+                <div class="card-header d-flex justify-content-between">
+                    <div class="d-flex">
+                        <img src="" class="my-auto">
+                        <p class="my-auto px-2">
+                            <b>
+                                <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path>
+                                </svg> 4 Open</b>
+                            <i class="fas fa-check"></i>9 Closed</p>
+                    </div>
+                    <div class="sort">
+                        <a class="nav-link dropdown-toggle" style="color: black" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Sort
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" agohref="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="font-weight-bold">v5 ideas</p>
+                                <p class="text-muted">
+                                    <i class="far fa-clock"></i>
+                                    <svg class="octicon octicon-clock" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M8 8h3v2H7c-.55 0-1-.45-1-1V4h2v4zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"></path>
+                                    </svg> Updated on Jan 12</p>
+                            </div>
+                            <div class="col-sm-8">
+                                <p>Don't get too excited-I'm just capturing random ideas here.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="font-weight-bold">v5 ideas</p>
+                                <p class="text-muted">
+                                    <i class="far fa-clock"></i>
+                                    <svg class="octicon octicon-clock" viewBox="0 0 14 16" version="1.1" width="14" height="16"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M8 8h3v2H7c-.55 0-1-.45-1-1V4h2v4zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"></path>
+                                    </svg> Updated 16 days ago</p>
+                            </div>
+                            <div class="col-sm-8">
+                                <p>Publish each component as it's own repository with lerna.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="font-weight-bold">Feature ideas</p>
+                                <p class="text-muted">
+                                    <i class="far fa-clock"></i>
+                                    <svg class="octicon octicon-clock" viewBox="0 0 14 16" version="1.1" width="14" height="16"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M8 8h3v2H7c-.55 0-1-.45-1-1V4h2v4zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"></path>
+                                    </svg> Updated 16 days ago</p>
+                            </div>
+                            <div class="col-sm-8">
+                                <p>Catch-all project board for organizing feature requests we receive from folks.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="font-weight-bold">v4.2</p>
+                                <p class="text-muted">
+                                    <i class="far fa-clock"></i>
+                                    <svg class="octicon octicon-clock" viewBox="0 0 14 16" version="1.1" width="14" height="16"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M8 8h3v2H7c-.55 0-1-.45-1-1V4h2v4zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"></path>
+                                    </svg> Updated 4 hours ago</p>
+                            </div>
+                            <div class="col-sm-8">
+                                <p>Forms and component enhancements</p>
+                            </div>
+                            <div class="progress" style="width: 20rem">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
 </body>
 
 </html>
